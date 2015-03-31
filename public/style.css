@@ -14,19 +14,70 @@ body {
   font-family: sans-serif;
 }
 
-
 li {
     padding: 0.5em;
-}
-
-#game {
-    display: inline-block;
 }
 
 pre {
     font-size: 2em;
     font-weight: bold;
 }
+
+#game {
+    display: inline-block;
+}
+
+
+#score-p1 {
+    color: #F00;
+}
+
+
+#score-p2 {
+    color: #00F;
+}
+
+
+.game-over-message {
+    display: none;
+}
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    display: inline-block;
+}
+
+.vertex-row > .line {
+    width: 100px;
+    height: 10px;
+    background-color: #EEE;
+    display: inline-block;
+}
+
+.edge-row > .line {
+    width: 10px;
+    height: 100px;
+    background-color: #EEE;
+    display: inline-block;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    display: inline-block;   
+}
+
+.row {
+
+    background-color: #FFF;
+}
+
+
+
 
 
 
