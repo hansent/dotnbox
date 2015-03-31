@@ -11,7 +11,21 @@ html, body {
 
 body {
   padding: 2em;
-  font-family:  Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
+}
+
+
+li {
+    padding: 0.5em;
+}
+
+#game {
+    display: inline-block;
+}
+
+pre {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 
