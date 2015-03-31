@@ -21,7 +21,20 @@ function Game(){
         [0,0,0,0], // (4 edges)  |    |    |    |  <- "edge row"
         [0,0,0]    // (3 edges)  * -- * -- * -- *  <- "vertex row"
     ];
+
 }
+
+
+/**
+ * inserts a line between two dots in the game
+ * @param  {Number} row index of the edge the line is being put on
+ * @param  {Number} col index of the edge the line is being put on
+ */
+Game.prototype.insertLine = function(row, col){
+    this.edges[row][col] = 1;
+}
+
+
 
 
 
@@ -116,10 +129,14 @@ function renderEdgeRow(edges){
 
 $(function(){
     var game = new Game();
-    ascii_board = renderGameState(game)
-    $('#game').html("<pre>" + ascii_board + "</pre>");
+    game.insertLine(0,0);
+    game.insertLine(1,0);
+
+    var ascii_board = renderGameState(game);
     console.log(ascii_board);
-})
+    $('#game').html("<pre>" + ascii_board + "</pre>");
+
+});
 
 
 
