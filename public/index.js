@@ -8,7 +8,7 @@ var DomUI = require('./dom');
 
 $(function(){
     var game = new Game();
-    //var consoleUI = ConsoleUI(game);
+    var consoleUI = ConsoleUI(game);
     var domUI = DomUI(game);
 
 });
